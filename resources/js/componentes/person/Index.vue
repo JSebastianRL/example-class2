@@ -2,7 +2,7 @@
     <section>
         <div class="card">
             <div class="card-header text-center">
-                <h1 class="text-center">Crear nuevas personas</h1>
+                <h1 class="text-center">Crear a nuevos usuarios de personas</h1>
                 <a class="btn btn-success" @click.prevent="createPerson">Crear</a>
             </div>
             <div class="card-boddy">
