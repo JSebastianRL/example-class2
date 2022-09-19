@@ -1,14 +1,14 @@
 <template>
     <section>
-        <h1>
-            Hola
+        <h1 class="text-center">
+            Test
         </h1>
     </section>
-</template>m
+</template>
 
 <script>
 
-     export default{
+    export default{
 
-     }
+    }
 </script>

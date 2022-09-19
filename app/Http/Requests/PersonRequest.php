@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PublisherRequest extends FormRequest
+class PersonRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class PublisherRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return TRUE;
     }
 
     /**
@@ -24,11 +24,9 @@ class PublisherRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:100|string',
-            'address' => 'required|max:150|string',
-            'city' => 'required|max:100|string',
-            'site' => 'required|max:100|string',
-            'image' => 'mimes:jpg,jpeg,png,bmp|max:2048',
+            'name'=> ['required','string', 'max:50'],
+            'surname' => ['required','string', 'max:50'],
+            'age' =>['integer', 'max:100'],
         ];
     }
 }

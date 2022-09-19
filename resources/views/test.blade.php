@@ -12,11 +12,7 @@
 
 <body>
     <main id="app">
-
-        <rick-and-morty>
-        </rick-and-morty>
-
-
+        <rick-and-morty></rick-and-morty>
     </main>
     <script src="{{ mix('js/app.js') }}"></script>
 
